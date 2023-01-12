@@ -100,15 +100,15 @@ class DynamicPokeListUI extends State {
                   style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFFFFFFFF)),
+                      color: Color(0xFFFAFADA)),
                   textAlign: TextAlign.left,
                 ),
               ),
               SizedBox(
                 width: MediaQuery.of(context).size.width,
                 child: const Text(
-                  "Search for a pokemon by name, clear search to get back the full pokedex again. When in detailed view, swipe left or right to see next or previous pokemon. \n",
-                  style: TextStyle(fontSize: 16, color: Color(0xFFFFFFFF)),
+                  "Search for a pokemon by name or number, clear search to get back the full pokedex again. When in detailed view, swipe left or right to see next or previous pokemon. \n",
+                  style: TextStyle(fontSize: 16, color: Color(0xFFFAFADA)),
                   textAlign: TextAlign.justify,
                 ),
               ),
@@ -118,13 +118,14 @@ class DynamicPokeListUI extends State {
                   onChanged: (searchController) => filterPokelist(),
                   controller: searchController,
                   decoration: const InputDecoration(
-                    enabledBorder: OutlineInputBorder(
-                      borderSide:
-                          BorderSide(color: Color(0xFFFFFFFF), width: 2),
-                    ),
-                    hintText: 'Search',
-                  ),
-                  style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 16),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide:
+                            BorderSide(color: Color(0xFFFAFADA), width: 2),
+                      ),
+                      hintText: 'Search',
+                      hintStyle: TextStyle(color: Color(0xFFFAFADA))),
+                  style:
+                      const TextStyle(color: Color(0xFFFAFADA), fontSize: 16),
                 ),
               ),
             ]),
@@ -146,7 +147,7 @@ class DynamicPokeListUI extends State {
                           margin: const EdgeInsets.fromLTRB(12, 4, 12, 4),
                           padding: const EdgeInsets.all(2),
                           decoration: BoxDecoration(
-                              color: const Color(0xFFD4F6FF),
+                              color: const Color(0xFFFAFAEA),
                               borderRadius:
                                   const BorderRadius.all(Radius.circular(6)),
                               border: Border.all(
@@ -163,7 +164,7 @@ class DynamicPokeListUI extends State {
                                 '${filterList['${index + 1}'][0]['number']}',
                                 style: const TextStyle(
                                   fontSize: 22,
-                                  color: Color(0xFFFFFFFF),
+                                  color: Color(0xFFFAFADA),
                                 ),
                               ),
                             ),

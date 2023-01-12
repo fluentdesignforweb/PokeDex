@@ -97,7 +97,7 @@ class DynamicPokeViewUI extends State {
                 textAlign: TextAlign.center,
                 '${pokelist['number']}   ${pokelist['name']}',
                 style: const TextStyle(
-                    color: Color(0xFFFFFFFF),
+                    color: Color(0xFFFAFADA),
                     fontSize: 24,
                     fontWeight: FontWeight.bold),
               ),
@@ -110,7 +110,7 @@ class DynamicPokeViewUI extends State {
                 textAlign: TextAlign.center,
                 '${pokelist['height']} ${pokelist['weight']} \n ${pokelist['species']} Pokemon',
                 style: const TextStyle(
-                  color: Color(0xFFFFFFFF),
+                  color: Color(0xFFFAFADA),
                   fontSize: 18,
                 ),
               ),
